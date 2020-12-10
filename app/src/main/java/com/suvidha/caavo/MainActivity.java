@@ -9,6 +9,7 @@ import android.os.Handler;
 
 public class MainActivity extends AppCompatActivity {
 
+    //Room Components Database,Entity(Table),DAO(Commands)
     Context context = this;
 
     @Override

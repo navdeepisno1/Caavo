@@ -24,9 +24,9 @@ import org.json.JSONException;
 public class RVAdapterRecipes extends RecyclerView.Adapter<RVAdapterRecipes.ViewH> {
     private Context context;
     private JSONArray recipes;
-    private RecyclerView constraintLayout;
+    private ConstraintLayout constraintLayout;
     private RecipeDetail recipeDetail;
-    public RVAdapterRecipes(Context context, JSONArray recipes, RecyclerView constraintLayout) {
+    public RVAdapterRecipes(Context context, JSONArray recipes, ConstraintLayout constraintLayout) {
         this.context = context;
         this.recipes = recipes;
         this.constraintLayout = constraintLayout;

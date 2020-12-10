@@ -3,7 +3,7 @@ package com.suvidha.caavo;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
-
+//This is the Entity or Table structure
 @Entity(tableName = "Recipes")
 public class RecipeDetail {
     @PrimaryKey(autoGenerate = true)

@@ -70,6 +70,6 @@ public class Home extends AppCompatActivity {
         ConstraintLayout constraintLayout = findViewById(R.id.home_cl);
         GridLayoutManager manager = new GridLayoutManager(context, 1);
         recyclerView_recipes.setLayoutManager(manager);
-        recyclerView_recipes.setAdapter(new RVAdapterRecipes(context,jsonArray,recyclerView_recipes));
+        recyclerView_recipes.setAdapter(new RVAdapterRecipes(context,jsonArray,constraintLayout));
     }
 }

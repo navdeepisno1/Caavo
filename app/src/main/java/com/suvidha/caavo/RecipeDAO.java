@@ -5,7 +5,7 @@ import androidx.room.Insert;
 import androidx.room.Query;
 
 import java.util.List;
-
+//This is used to create all the queries
 @Dao
 public interface RecipeDAO{
     @Query("SELECT * FROM Recipes")
