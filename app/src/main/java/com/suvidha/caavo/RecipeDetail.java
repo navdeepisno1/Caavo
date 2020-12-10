@@ -4,11 +4,15 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 //This is the Entity or Table structure
+
+//Annotate the class with @Entity and here we are giving the table name as Recipes
 @Entity(tableName = "Recipes")
 public class RecipeDetail {
+    //To create primary key
     @PrimaryKey(autoGenerate = true)
     private int rid;
 
+    //To create column name called ID
     @ColumnInfo(name = "ID")
     private String id;
     @ColumnInfo(name = "NAME")

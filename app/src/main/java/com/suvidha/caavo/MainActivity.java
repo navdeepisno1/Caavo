@@ -16,15 +16,19 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //To run startSplash() function
         startSplash();
     }
 
     private void startSplash()
     {
+        //Handler is used to run a task after certain amount of time. Here 1500 milliseconds
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
+                //To start the new activity we pass intent.
                 startActivity(new Intent(context,Home.class));
                 finish();
             }

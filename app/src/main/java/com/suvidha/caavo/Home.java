@@ -46,6 +46,13 @@ public class Home extends AppCompatActivity {
 
     private void getRecipes(String url)
     {
+        /*
+        Steps in using Volley Library
+        1) Create RequestQueue
+        2) Create RequestObject of desired type eg. String,JSON,JSONArray etc
+        3) Add RequestObject to RequestQueue
+        4) Tada... request sent and response received
+         */
         RequestQueue requestQueue = Volley.newRequestQueue(context);
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(url,
                 new Response.Listener<JSONArray>() {
